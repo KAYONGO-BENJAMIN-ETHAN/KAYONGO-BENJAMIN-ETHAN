@@ -1,1 +1,15 @@
-
+#include <stdio.h>
+int main(){
+	int a, opo;
+	printf("divisability of a number by two(2)\n");
+	printf("enter the number: ");
+	scanf("%d", &a);
+	opo = a/2;
+	if (2*opo==a){
+	printf("the number is even\n");}
+    else(printf("number is odd\n"));
+    main();
+    return 1;
+    
+	
+}
