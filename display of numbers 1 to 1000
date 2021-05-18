@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main(){
+int gal = 1;
+	while(gal<=1000){
+	printf("%d\n",gal);
+	gal= gal + 1;}
+}
