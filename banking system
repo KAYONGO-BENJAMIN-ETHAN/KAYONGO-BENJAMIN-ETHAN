@@ -1,0 +1,65 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int m,k,birth,amount,tttt,age;
+    char name[50];
+    char gender[6];
+    char Comp;
+    printf("                                          BUGURI COMMUNITY BANK\n");
+     printf("                                          P.O.BOX 5678,\n");
+      printf("                                          KAWUKU,WAKISO\n\n\n");
+      printf("TO ACESS OUR BANKING SERVICES PLEASE ENTER '2' BELOW\n");
+      printf("ENTRE HERE: ");
+      scanf("%d",&m);
+      struct Comp{
+      char name[50];
+      int dateofbirth[10];
+      int age[2];
+      char gender[6];
+      int balance;
+      int amount;
+      int ttt;};
+
+      if(m==2){
+        printf("1.to creat acount\n");
+        printf("2.to check balance\n");
+        printf("3.to withdraw cash\n");
+        printf("enter here: \n");
+        scanf("%d",&k);
+        if(k==1){
+
+            printf("enter ur name here: \n");
+            struct Comp customer1;
+            customer1.name[50]=scanf("%s",&name);
+            printf("enter ur dateofbirth here: \n");
+            customer1.dateofbirth[8]=scanf("%d",&birth);
+            printf("enter ur age here: \n");
+            customer1.age[2]=scanf("%d",&age);
+            printf("enter ur gender here: \n");
+            customer1.gender[6]=scanf("%s",&gender);
+            printf("account created successfully");
+        }
+        if(k==2){
+
+            printf("ur balance is sh:5560000");
+        }
+        if(k==3){
+            printf(" type amount u want to withdraw here: ");
+            scanf("%d",&amount);
+            if(amount<5560000){
+                    tttt=560000-amount;
+                printf("u have withdrawn %d,ur balance is %d",amount,tttt);
+            }
+            else{
+                printf("not enough money on the account");
+                main();
+                return 0;
+            }
+        }
+
+      }
+
+    return 0;
+}
