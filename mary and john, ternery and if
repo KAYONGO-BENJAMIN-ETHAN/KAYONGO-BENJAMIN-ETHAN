@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main (){
+	printf("                                   MARY AND JOHN\n");
+	int john,mary,sum,a;
+	printf("enter john age: \n");
+	scanf("%d",&john);
+	printf("enter mary age: \n");
+	scanf("%d",&mary);
+	sum=(mary+john)/2;
+	
+	printf("choose what u want to do with their ages below\n");
+	printf("1.to find their average\n");
+	printf("2.to find out who is older\n");
+	printf("3.to know if they have same age\n");
+	printf("put ur choice here: ");
+	scanf("%d",&a);
+	
+    if(a==1){printf("the average is %d",sum);}
+    if (a==2){
+	john>mary?printf("john is older"):printf("mary is older");}
+	if(a==3){
+		mary==john?printf(" equal"):printf("not equal");
+	}
+	
+}
