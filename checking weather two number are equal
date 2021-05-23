@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main(){
+	int a,b;
+	printf("                       check weather ur numbers are equal\n");
+	printf("ur first number: \n");
+	scanf("%d",&a);
+	printf("ur second number: \n");
+	scanf("%d",&b);
+	a==b?printf("they are equal"):printf("they are not equal");
+}
