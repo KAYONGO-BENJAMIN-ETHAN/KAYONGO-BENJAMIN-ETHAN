@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main(){
+	int a;
+	int g=1;
+	printf("enter the year: ");
+	scanf("%d",&a);
+	if(g==a%2){
+		printf("the days are 365");}
+	else if(g!=a%2){
+	printf("the days are 366");}
+	
+	
+}
