@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main(){
+	printf("                        checking weather first name is joel\n");
+	char joel,rr,dd;
+	printf("enter first name: \n");
+	scanf("%s",&rr);
+	printf("enter second name: \n");
+	scanf("%s",&dd);
+	if(rr==joel){printf("correct the name matches\n");
+	}
+	else if(rr!=joel){printf("incorrect\n");}
+	
+	
+}
