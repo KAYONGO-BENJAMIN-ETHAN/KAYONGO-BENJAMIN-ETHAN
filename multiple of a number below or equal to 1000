@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main(){
+	int multiple,d;
+	printf("enter ur number here: ");
+	scanf("%d",&d);
+	for(multiple=1;multiple<=1000;multiple++)
+	if(multiple%d==0)
+	printf("here is one of the multiples %d\n",multiple);
+}
