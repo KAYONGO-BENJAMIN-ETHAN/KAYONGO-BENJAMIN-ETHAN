@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main(){
+	printf("number of days in a month\n");
+	printf("pick a month of ur choice\n");
+	printf("1.january\n2.february\n3.march\n4.april\n5.may\n6.june\n7.july\n8.august\n9.september\n10.october\n11.november\n12.december\n");
+int r;
+float average;
+	int oddmonth=31,february=28,feb=29,evenmonth=30;
+	printf("enter the month number here: ");
+	scanf("%d",&r);
+	if(r==2){printf("the days in this month are %d for even year,%f for odd year\n",february,feb);
+	average=(feb||february/2);
+	printf("to find the average of days of the choosen month,press ok: \n");
+	scanf("%f",&average);
+	printf("the average is %f",average);}
+	else if(r==4||r==6||r==9||r==11){printf("the days in this month are %d\n",evenmonth);
+	average=(evenmonth/2);
+	printf("to find the average of days of the choosen month,press ok: \n");
+	scanf("%f",average);
+	printf("the average is %f",average);}
+	else  if(r==3||r==1||r==5||r==7||r==8||r==10||r==12){printf("the days in this month are %d\n",oddmonth);
+	average=(oddmonth/2);
+	printf("to find the average of days of the choosen month,press ok: \n");
+	scanf("%f",average);
+	printf("the average is %f",average);}
+
+	
+	
+}
