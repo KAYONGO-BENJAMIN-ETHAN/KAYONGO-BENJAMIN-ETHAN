@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <string.h>
+	
+int main()
+{
+	char name[]="joel";
+	char n[4];
+	
+	printf("enter the first name");
+	scanf("%d",&n);
+	strcmp(name,n)==0?printf("correct"):printf("incorreect");
+}
